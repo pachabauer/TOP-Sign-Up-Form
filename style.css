@@ -1,0 +1,38 @@
+* { padding: 0; margin: 0; }
+
+html, body, .imgLeftSide {
+    height: 98.4vh !important;
+}
+
+@font-face {
+    font-family: futbol;
+    src: url(fuentes/SoccerLeague.ttf);
+}
+
+.imgLeftSide { 
+    display: flex;
+    position: relative;
+    -webkit-writing-mode: vertical-rl;
+    width: 50%;
+    filter: grayscale(80%);
+    opacity: 0.8;
+
+}
+
+.imgLeftSide:hover { 
+    filter: grayscale(0%);
+    filter: none;
+    opacity: 1;
+    transition: 1s ease;
+
+}
+
+.footer { 
+    display: flex;
+    justify-content: center;
+    background-color: #121212;
+    width: 50%;
+    color: white;
+    font-family: futbol;
+    font-size: 1rem;
+}
