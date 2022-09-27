@@ -1,5 +1,10 @@
 * { padding: 0; margin: 0;  }
 
+body {
+    background-color: #121212;
+
+}
+
 
 
 @font-face {
@@ -15,7 +20,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3,1fr);
-    height: 100vh;
+    min-height: 100vh;
     border: 1px solid black;
     background-color: #121212;
 
@@ -27,7 +32,7 @@
     grid-row: 1/-1;
     grid-column: 1/1;
     border: 1px solid black;
-
+    height: 100vh;
 }
 
 .imgLeftSide { 
@@ -39,6 +44,7 @@
 
 .footer { 
     display: flex;
+    grid-row: 3/3;
     justify-content: center;
     background-color: #121212;
     color: white;
@@ -59,12 +65,14 @@
     display: flex;
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 48px;
+    font-size: 18px;
     color: white;
     grid-row: 1/1;
     margin-top: 10%;
     margin-bottom: 20%;
-
+    background-color: #e6007e;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 form p {
@@ -91,8 +99,21 @@ form p {
     grid-row: 2/2;
     justify-content: center;
     margin-bottom: 20px;
+    background-color: rgb(2, 2, 2);
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+
 
 }
+
+input:focus{
+    outline: none;
+    border: 2px solid white;
+}
+
 
 .account {
     display: flex;
@@ -100,17 +121,39 @@ form p {
     justify-content: center;
 }
 
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #e6007e;;
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+    font-family: futbol;
+    grid-row: 3/3;
+    padding: 20px;
+}
+
+button:hover{
+    background-color: #e6007e;;
+    color: #121212;
+    
+}
+
 .login { 
     display: flex;
     justify-content: center;
     margin-top: 100px;
-
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     grid-row: 3/3;
     color: white;
 
 }
 
+.message { 
+    display: flex;
+    grid-row: 3/3;
+    color: white;
+    font-size: 20px;
+}
 
 

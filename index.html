@@ -16,33 +16,36 @@
 
         <div class="rigth-side">
             <div class="text">
-                <strong>Registrate ahora y comenzá a completar tu álbum</strong>
+                <h1>REGISTRATE AHORA Y COMENZA A COMPLETAR TU ALBUM</h1>
             </div>
             <div class="form">
                 <form action="" method="post">
                     <p>
                         <label for="first_name">FIRST NAME:</label>
-                        <input type="text" id="first_name">
+                        <input type="text" id="first_name" required>
                     </p>
                     <p>   
                         <label for="last_name">LAST NAME:</label>
-                        <input type="text" id="last_name">
+                        <input type="text" id="last_name" required>
                     </p>
                     <p>
                         <label for="email">EMAIL:</label>
-                        <input type="email" id="email" placeholder="you@example.com">
+                        <input type="email" id="email" placeholder="you@example.com" required>
                     </p>
                     <p>
-                        <label for="telephone">TELEPHONE</label>
-                        <input type="tel" id="telephone" name="telephone">
+                        <label for="telephone">PHONE NUMBER:</label>
+                        <input type="tel" id="telephone" name="telephone" required>
                     </p>
                     <p>
                         <label for="password">PASSWORD:</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" onkeyup='checkPassword();'required minlength="8" maxlength="20">
                     </p>
                     <p>
-                        <label for="confirmPassword">CONFIRM PASSWORD:</label>
-                        <input type="password" name="password" id="password">
+                        <label for="confirm_password">CONFIRM PASSWORD:</label>
+                        <input type="password" name="confirm_password" id="confirm_password" onkeyup='checkPassword();'required minlength="8" maxlength="20">
+                    </p>
+                    <p>
+                        <span class="message" id='message'></span>
                     </p>
 
                 </form>
